@@ -1,16 +1,16 @@
 import tkinter
 
-lst = [0] * 5 * 5
+lst = [0] * 10 * 10
 
 master=tkinter.Tk()
 master.title("grid() method")
-master.geometry("350x275")
+master.geometry("400x400")
 
 def colorChange(x, y):
-  lst[x-1 + (y-1) * 5] = 1
+  lst[x-1 + (y-1) * 10] = 1
   print(lst)
 
-button1_1=tkinter.Button(master, text="", command=lambda : colorChange(1,1))
+button1_1=tkinter.Button(master, text="", command=lambda : colorChange(1,1), activebackground="red")
 button1_1.grid(row=1,column=1)
 button2_1=tkinter.Button(master, text="", command=lambda : colorChange(2,1))
 button2_1.grid(row=2,column=1)
@@ -20,6 +20,19 @@ button4_1=tkinter.Button(master, text="", command=lambda : colorChange(4,1))
 button4_1.grid(row=4,column=1)
 button5_1=tkinter.Button(master, text="", command=lambda : colorChange(5,1))
 button5_1.grid(row=5,column=1)
+
+button6_1=tkinter.Button(master, text="", command=lambda : colorChange(6,1))
+button6_1.grid(row=6,column=1)
+button7_1=tkinter.Button(master, text="", command=lambda : colorChange(7,1))
+button7_1.grid(row=7,column=1)
+button8_1=tkinter.Button(master, text="", command=lambda : colorChange(8,1))
+button8_1.grid(row=8,column=1)
+button9_1=tkinter.Button(master, text="", command=lambda : colorChange(9,1)) 
+button9_1.grid(row=9,column=1)
+button10_1=tkinter.Button(master, text="", command=lambda : colorChange(10,1))
+button10_1.grid(row=10,column=1)
+
+
 
 button1_2=tkinter.Button(master, text="", command=lambda : colorChange(1, 2))
 button1_2.grid(row=1,column=2)
@@ -32,6 +45,19 @@ button4_2.grid(row=4,column=2)
 button5_2=tkinter.Button(master, text="", command=lambda : colorChange(5, 2))
 button5_2.grid(row=5,column=2)
 
+button6_2=tkinter.Button(master, text="", command=lambda : colorChange(6,2))
+button6_2.grid(row=6,column=2)
+button7_2=tkinter.Button(master, text="", command=lambda : colorChange(7,2))
+button7_2.grid(row=7,column=2)
+button8_2=tkinter.Button(master, text="", command=lambda : colorChange(8,2))
+button8_2.grid(row=8,column=2)
+button9_2=tkinter.Button(master, text="", command=lambda : colorChange(9,2)) 
+button9_2.grid(row=9,column=2)
+button10_2=tkinter.Button(master, text="", command=lambda : colorChange(10,2))
+button10_2.grid(row=10,column=2)
+
+
+
 button1_3=tkinter.Button(master, text="", command=lambda : colorChange(1, 3))
 button1_3.grid(row=1,column=3)
 button2_3=tkinter.Button(master, text="", command=lambda : colorChange(2, 3))
@@ -42,6 +68,19 @@ button4_3=tkinter.Button(master, text="", command=lambda : colorChange(4, 3))
 button4_3.grid(row=4,column=3)
 button5_3=tkinter.Button(master, text="", command=lambda : colorChange(5, 3))
 button5_3.grid(row=5,column=3)
+
+button6_3=tkinter.Button(master, text="", command=lambda : colorChange(6,3))
+button6_3.grid(row=6,column=3)
+button7_3=tkinter.Button(master, text="", command=lambda : colorChange(7,3))
+button7_3.grid(row=7,column=3)
+button8_3=tkinter.Button(master, text="", command=lambda : colorChange(8,3))
+button8_3.grid(row=8,column=3)
+button9_3=tkinter.Button(master, text="", command=lambda : colorChange(9,3)) 
+button9_3.grid(row=9,column=3)
+button10_3=tkinter.Button(master, text="", command=lambda : colorChange(10,3))
+button10_3.grid(row=10,column=3)
+
+
 
 button1_4=tkinter.Button(master, text="", command=lambda : colorChange(1, 4))
 button1_4.grid(row=1,column=4)
@@ -54,6 +93,19 @@ button4_4.grid(row=4,column=4)
 button5_4=tkinter.Button(master, text="", command=lambda : colorChange(5,4))
 button5_4.grid(row=5,column=4)
 
+button6_4=tkinter.Button(master, text="", command=lambda : colorChange(6,4))
+button6_4.grid(row=6,column=4)
+button7_4=tkinter.Button(master, text="", command=lambda : colorChange(7,4))
+button7_4.grid(row=7,column=4)
+button8_4=tkinter.Button(master, text="", command=lambda : colorChange(8,4))
+button8_4.grid(row=8,column=4)
+button9_4=tkinter.Button(master, text="", command=lambda : colorChange(9,4)) 
+button9_4.grid(row=9,column=4)
+button10_4=tkinter.Button(master, text="", command=lambda : colorChange(10,4))
+button10_4.grid(row=10,column=4)
+
+
+
 button1_5=tkinter.Button(master, text="", command=lambda : colorChange(1,5))
 button1_5.grid(row=1,column=5)
 button2_5=tkinter.Button(master, text="", command=lambda : colorChange(2,5))
@@ -65,5 +117,133 @@ button4_5.grid(row=4,column=5)
 button5_5=tkinter.Button(master, text="", command=lambda : colorChange(5,5))
 button5_5.grid(row=5,column=5)
 
+button6_5=tkinter.Button(master, text="", command=lambda : colorChange(6,5))
+button6_5.grid(row=6,column=5)
+button7_5=tkinter.Button(master, text="", command=lambda : colorChange(7,5))
+button7_5.grid(row=7,column=5)
+button8_5=tkinter.Button(master, text="", command=lambda : colorChange(8,5))
+button8_5.grid(row=8,column=5)
+button9_5=tkinter.Button(master, text="", command=lambda : colorChange(9,5)) 
+button9_5.grid(row=9,column=5)
+button10_5=tkinter.Button(master, text="", command=lambda : colorChange(10,5))
+button10_5.grid(row=10,column=5)
 
+
+
+button1_6=tkinter.Button(master, text="", command=lambda : colorChange(1,6))
+button1_6.grid(row=1,column=6)
+button2_6=tkinter.Button(master, text="", command=lambda : colorChange(2,6))
+button2_6.grid(row=2,column=6)
+button3_6=tkinter.Button(master, text="", command=lambda : colorChange(3,6))
+button3_6.grid(row=3,column=6)
+button4_6=tkinter.Button(master, text="", command=lambda : colorChange(4,6))
+button4_6.grid(row=4,column=6)
+button5_6=tkinter.Button(master, text="", command=lambda : colorChange(5,6))
+button5_6.grid(row=5,column=6)
+
+button6_6=tkinter.Button(master, text="", command=lambda : colorChange(6,6))
+button6_6.grid(row=6,column=6)
+button7_6=tkinter.Button(master, text="", command=lambda : colorChange(7,6))
+button7_6.grid(row=7,column=6)
+button8_6=tkinter.Button(master, text="", command=lambda : colorChange(8,6))
+button8_6.grid(row=8,column=6)
+button9_6=tkinter.Button(master, text="", command=lambda : colorChange(9,6)) 
+button9_6.grid(row=9,column=6)
+button10_6=tkinter.Button(master, text="", command=lambda : colorChange(10,6))
+button10_6.grid(row=10,column=6)
+
+
+button1_7=tkinter.Button(master, text="", command=lambda : colorChange(1,7))
+button1_7.grid(row=1,column=7)
+button2_7=tkinter.Button(master, text="", command=lambda : colorChange(2,7))
+button2_7.grid(row=2,column=7)
+button3_7=tkinter.Button(master, text="", command=lambda : colorChange(3,7))
+button3_7.grid(row=3,column=7)
+button4_7=tkinter.Button(master, text="", command=lambda : colorChange(4,7))
+button4_7.grid(row=4,column=7)
+button5_7=tkinter.Button(master, text="", command=lambda : colorChange(5,7))
+button5_7.grid(row=5,column=7)
+
+button6_7=tkinter.Button(master, text="", command=lambda : colorChange(6,7))
+button6_7.grid(row=6,column=7)
+button7_7=tkinter.Button(master, text="", command=lambda : colorChange(7,7))
+button7_7.grid(row=7,column=7)
+button8_7=tkinter.Button(master, text="", command=lambda : colorChange(8,7))
+button8_7.grid(row=8,column=7)
+button9_7=tkinter.Button(master, text="", command=lambda : colorChange(9,7)) 
+button9_7.grid(row=9,column=7)
+button10_7=tkinter.Button(master, text="", command=lambda : colorChange(10,7))
+button10_7.grid(row=10,column=7)
+
+
+
+button1_8=tkinter.Button(master, text="", command=lambda : colorChange(1,8))
+button1_8.grid(row=1,column=8)
+button2_8=tkinter.Button(master, text="", command=lambda : colorChange(2,8))
+button2_8.grid(row=2,column=8)
+button3_8=tkinter.Button(master, text="", command=lambda : colorChange(3,8))
+button3_8.grid(row=3,column=8)
+button4_8=tkinter.Button(master, text="", command=lambda : colorChange(4,8))
+button4_8.grid(row=4,column=8)
+button5_8=tkinter.Button(master, text="", command=lambda : colorChange(5,8))
+button5_8.grid(row=5,column=8)
+
+button6_8=tkinter.Button(master, text="", command=lambda : colorChange(6,8))
+button6_8.grid(row=6,column=8)
+button7_8=tkinter.Button(master, text="", command=lambda : colorChange(7,8))
+button7_8.grid(row=7,column=8)
+button8_8=tkinter.Button(master, text="", command=lambda : colorChange(8,8))
+button8_8.grid(row=8,column=8)
+button9_8=tkinter.Button(master, text="", command=lambda : colorChange(9,8)) 
+button9_8.grid(row=9,column=8)
+button10_8=tkinter.Button(master, text="", command=lambda : colorChange(10,8))
+button10_8.grid(row=10,column=8)
+
+
+
+button1_9=tkinter.Button(master, text="", command=lambda : colorChange(1,9))
+button1_9.grid(row=1,column=9)
+button2_9=tkinter.Button(master, text="", command=lambda : colorChange(2,9))
+button2_9.grid(row=2,column=9)
+button3_9=tkinter.Button(master, text="", command=lambda : colorChange(3,9))
+button3_9.grid(row=3,column=9)
+button4_9=tkinter.Button(master, text="", command=lambda : colorChange(4,9))
+button4_9.grid(row=4,column=9)
+button5_9=tkinter.Button(master, text="", command=lambda : colorChange(5,9))
+button5_9.grid(row=5,column=9)
+
+button6_9=tkinter.Button(master, text="", command=lambda : colorChange(6,9))
+button6_9.grid(row=6,column=9)
+button7_9=tkinter.Button(master, text="", command=lambda : colorChange(7,9))
+button7_9.grid(row=7,column=9)
+button8_9=tkinter.Button(master, text="", command=lambda : colorChange(8,9))
+button8_9.grid(row=8,column=9)
+button9_9=tkinter.Button(master, text="", command=lambda : colorChange(9,9)) 
+button9_9.grid(row=9,column=9)
+button10_9=tkinter.Button(master, text="", command=lambda : colorChange(10,9))
+button10_9.grid(row=10,column=9)
+
+
+
+button1_10=tkinter.Button(master, text="", command=lambda : colorChange(1,10))
+button1_10.grid(row=1,column=10)
+button2_10=tkinter.Button(master, text="", command=lambda : colorChange(2,10))
+button2_10.grid(row=2,column=10)
+button3_10=tkinter.Button(master, text="", command=lambda : colorChange(3,10))
+button3_10.grid(row=3,column=10)
+button4_10=tkinter.Button(master, text="", command=lambda : colorChange(4,10))
+button4_10.grid(row=4,column=10)
+button5_10=tkinter.Button(master, text="", command=lambda : colorChange(5,10))
+button5_10.grid(row=5,column=10)
+
+button6_10=tkinter.Button(master, text="", command=lambda : colorChange(6,10))
+button6_10.grid(row=6,column=10)
+button7_10=tkinter.Button(master, text="", command=lambda : colorChange(7,10))
+button7_10.grid(row=7,column=10)
+button8_10=tkinter.Button(master, text="", command=lambda : colorChange(8,10))
+button8_10.grid(row=8,column=10)
+button9_10=tkinter.Button(master, text="", command=lambda : colorChange(9,10)) 
+button9_10.grid(row=9,column=10)
+button10_10=tkinter.Button(master, text="", command=lambda : colorChange(10,10))
+button10_10.grid(row=10,column=10)
 master.mainloop()
